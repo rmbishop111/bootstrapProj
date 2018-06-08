@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin: 0!important;
+  max-width: 1920;
+}
+
+.headerParallax { 
+  /* The image used */
+  background-image: url("https://burnaround.files.wordpress.com/2018/05/burnback3-e1526749932744.jpg");
+  /* Set a specific height */
+  height: 690px;
+  min-width: 360px;
+  background-color: black;
+  top: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+   background-position: calc(50% - 30px) calc(50% - 45%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* Transitions */
+  transition: all .25s linear;
+  -o-transition: all .25s linear; 
+  -moz-transition: all .25s linear; 
+  -webkit-transition: all .25s linear;
+}
+
+.tonyParallax { 
+  /* The image used */
+  background-image: url("https://burnaround.files.wordpress.com/2018/05/tony-e1526771109759.jpg");
+  /* Set a specific height */
+  height: 690px;
+  min-width: 360px;
+  background-color: black;
+  top: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+   background-position: calc(50% - 30px) calc(50% - 45%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* Transitions */
+  transition: all .25s linear;
+  -o-transition: all .25s linear; 
+  -moz-transition: all .25s linear; 
+  -webkit-transition: all .25s linear;
+}
+
+#fixed {
+  background-image: url('/images/burnback.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+/*---Media Queries --*/
+@media only screen and (max-width: 1440px) {
+  .headerParallax{
+    height: 800px;
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .headerParallax{
+      height: 700px;
+  
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .headerParallax{
+      height: 650px;
+  
+    }
+  }
+
+
+}
+@media only screen and (max-width: 1024px) {
+  .headerParallax{
+    height: 550px;
+
+  }
+}
+
+@media only screen and (max-width: 978px) {
+  .headerParallax{
+    height: 400px;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .headerParallax{
+    height: 350px;
+    background-position-y: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .headerParallax{
+    height: 300px;
+    background-position-y: 50px;
+  }
+
+@media only screen and (max-width: 397px) {
+  .headerParallax{
+    height: 250px;
+
+  }
+}
+
+
+@media only screen and (max-width: 361px) {
+  .headerParallax{
+    height: 200px;
+
+  }
+}
+
+@media only screen and (max-width: 320px) {
+ .headerParallax{
+   height: 200px;
+   width: 300px;
+ }
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+

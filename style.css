@@ -1,152 +1,122 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/* general styles */
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  /* padded section */
+  .pad-section {
+    padding: 50px 0;
+  }
+  .pad-section img {
+    width: 100%;
+  }
+  /* vertical-centered text */
+  .center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .text-vcenter h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  /* additional sections */
+  #headerParallax {
+    background: url('https://burnaround.files.wordpress.com/2018/05/burnback3-e1526749932744.jpg') no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #about {
+  }
+  #services {
+    background-color: #2b455a;
+    color: #ffffff;
+  }
+  #services .glyphicon {
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 60px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+  }
+  #tonyParallax {
+    background: url('https://burnaround.files.wordpress.com/2018/05/tony-e1526771109759.jpg') no-repeat center center fixed;
+    display: table;
+    height: 1500px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #danParallax {
+    background: url('https://burnaround.files.wordpress.com/2018/05/dan.jpg') no-repeat center center fixed;
+    display: table;
+    height: 1500px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #ryanParallax {
+    background: url('https://burnaround.files.wordpress.com/2018/05/rb1.jpg') no-repeat center center fixed;
+    display: table;
+    height: 1500px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #billParallax {
+    /* background: url('') no-repeat center center fixed; */
+    background-color: #5a2626;
+    display: table;
+    height: 1500px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
+  *{
+    transition: all .5s linear;
+    -o-transition: all .5s linear; 
+    -moz-transition: all .5s linear; 
+    -webkit-transition: all .5s linear;
+  }
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  min-width: 320px;
-  height: 100%;
-  margin: 0!important;
-  max-width: 1920;
-}
-
-.headerParallax { 
-  /* The image used */
-  background-image: url("https://burnaround.files.wordpress.com/2018/05/burnback3-e1526749932744.jpg");
-  /* Set a specific height */
-  height: 690px;
-  min-width: 320px;
-  background-color: black;
-  top: 0;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-   background-position: calc(50% - 30px) calc(50% - 45%);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  /* Transitions */
-  transition: all .25s linear;
-  -o-transition: all .25s linear; 
-  -moz-transition: all .25s linear; 
-  -webkit-transition: all .25s linear;
-}
-
-#fixed {
-  background-image: url('/images/burnback.jpg');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
-/*---Media Queries --*/
-@media only screen and (max-width: 1050px) {
-  .headerParallax{
+  #information .panel {
+    opacity: 0.85;
+  }
+  #google_map {
     height: 500px;
-
   }
-}
-@media only screen and (max-width: 1024px) {
-  .headerParallax{
-    height: 450px;
-
+  footer {
+    padding: 20px 0;
   }
-}
-
-@media only screen and (max-width: 978px) {
-  .headerParallax{
-    height: 400px;
-
+  footer .glyphicon {
+    color: #333333;
+    font-size: 60px;
   }
-
-}
-
-@media only screen and (max-width: 768px) {
-  .headerParallax{
-    height: 350px;
-    background-position-y: 50px;
+  footer .glyphicon:hover {
+    color: #306d9f;
   }
-}
-
-
-@media only screen and (max-width: 414px) {
-  .headerParallax{
-    height: 300px;
-    background-position-y: 50px;
-  }
-
-@media only screen and (max-width: 397px) {
-  .headerParallax{
-    height: 250px;
-
-  }
-}
-
-
-@media only screen and (max-width: 361px) {
-  .headerParallax{
-    height: 300px;
-
-  }
-}
-
-@media only screen and (max-width: 320px) {
- .headerParallax{
-   height: 200px;
-   width: 300px;
- }
-}
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
