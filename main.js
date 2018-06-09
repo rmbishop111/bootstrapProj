@@ -1,14 +1,14 @@
 $(document).ready(function (){
     // create a LatLng object containing the coordinate for the center of the map
-    var latlng = new google.maps.LatLng(-33.86455, 151.209);
+    var latlng = new google.maps.LatLng(43.6156, -84.2455);
     // prepare the map properties
     var options = {
       zoom: 15,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       navigationControl: true,
-      mapTypeControl: false,
-      scrollwheel: false,
+      mapTypeControl: true,
+      scrollwheel: true,
       disableDoubleClickZoom: true
     };
     // initialize the map object
